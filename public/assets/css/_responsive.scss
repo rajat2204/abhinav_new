@@ -387,6 +387,19 @@
         }
       }
     }
+    #blog-page{
+      .blog-wrapper {
+        .category-active{
+          .all-blogs-wrapper {
+            
+            grid-template-columns: 1fr;
+            
+            
+          }
+        }
+        
+      }
+    }
     
     
 }
@@ -671,5 +684,5 @@
   }
   
 }
-    
+
   

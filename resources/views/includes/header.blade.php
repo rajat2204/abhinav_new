@@ -26,16 +26,16 @@
 
     <div class="social-link-icon">
         <div class="icon icon1">
-                <a href="https://www.facebook.com/officialabhinavkumar" class="link" target="_blank"><i class="fab fa-facebook-f"></i></a>  
+                <a href="{{$social[0]['url']}}" class="link" target="_blank"><i class="fab fa-facebook-f"></i></a>  
         </div>
         <div class="icon icon2">
-                <a href="https://twitter.com/singhabhinav?lang=en" class="link" target="_blank"><i class="fab fa-twitter"></i></a>  
+                <a href="{{$social[2]['url']}}" class="link" target="_blank"><i class="fab fa-twitter"></i></a>  
         </div>
         <div class="icon icon3">
-                <a href="https://www.linkedin.com/in/abhinavku/" class="link" target="_blank"><i class="fab fa-linkedin-in"></i></a>  
+                <a href="{{$social[3]['url']}}" class="link" target="_blank"><i class="fab fa-linkedin-in"></i></a>  
         </div>
         <div class="icon icon4">
-                <a href="https://www.instagram.com/abhinavkumarinsta/" class="link" target="_blank"><i class="fab fa-instagram"></i></a>  
+                <a href="{{$social[1]['url']}}" class="link" target="_blank"><i class="fab fa-instagram"></i></a>  
         </div>
        
     </div>
