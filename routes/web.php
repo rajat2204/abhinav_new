@@ -17,6 +17,8 @@ Route::get('/about','HomeController@aboutUs');
 Route::get('/contact','HomeController@contactUs');
 Route::get('/interviews','HomeController@interview');
 Route::get('/blog','HomeController@blogs');
+Route::get('blog/{id}','HomeController@singleBlog');
+Route::get('category/{id}','HomeController@categoryBlog');
 
 
 // Admin Section

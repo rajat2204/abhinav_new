@@ -3,9 +3,9 @@
      My Blogs
   </div>
   <div class="category-buttons-wrapper">
-      <button class="button-subcatogory active" onclick="openCity('all-blogs')">All Blogs</button>
+      <button class="button-subcatogory filter_type acitve">All Blogs</button>
       @foreach($category as $categories)
-      <button class="button-subcatogory" onclick="openCity('category_id')">{{$categories['name']}}</button>
+      <a href="{{url('category')}}/{{___encrypt($categories['id'])}}"><button class="button-subcatogory filter_type"> {{$categories['name']}}</button></a>
       @endforeach
   </div>
   <div class="blog-wrapper">
@@ -14,14 +14,14 @@
         @foreach($blogmore as $blog)
           <div class="blog-card">
               <div class="blog-card-image">
-                  <img src="{{url('assets/img/blogs')}}/{{$blog['image']}}" alt="image not found" >
+                <img src="{{url('assets/img/blogs')}}/{{$blog['image']}}" alt="image not found">
               </div> 
               <div class="blog-card-heading">
                   {{$blog['title']}}
               </div>
-                <div class="blog-card-content">{{strip_tags(str_limit($blog['description'],200))}} </div> 
+                <div class="blog-card-content">{{strip_tags(str_limit(preg_replace("/&#?[a-z0-9]{2,8};/i","",$blog['description']),200))}} </div> 
                 <div class="link-wrapper">
-                  <a href="" class="read-more">Read More</a>
+                  <a href="{{url('blog')}}/{{(___encrypt($blog['id']))}}" class="read-more">Read More</a>
                 </div>
           </div>
         @endforeach

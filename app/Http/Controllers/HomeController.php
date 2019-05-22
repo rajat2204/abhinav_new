@@ -51,4 +51,22 @@ class HomeController extends Controller
         $data['blogmore'] = _arefy(Blog::list('array',$where));
 		return view('front_home',$data);
     }
+
+    public function singleBlog(Request $request,$id){
+        $data['view'] = 'front.singleblog';
+        $data['social'] = _arefy(SocialMedia::where('status','active')->get());
+        $id = ___decrypt($id);
+        $where = 'id = "'.$id.'"';
+        $data['blog'] = _arefy(Blog::list('single',$where));
+        return view('front_home',$data);
+    }
+
+    public function categoryBlog(Request $request,$id){
+        $data['view'] = 'front.categoryblog';
+        $data['social'] = _arefy(SocialMedia::where('status','active')->get());
+        $id = ___decrypt($id);
+        $where = 'category_id = "'.$id.'"';
+        $data['blog'] = _arefy(Blog::list('array',$where));
+        return view('front_home',$data);
+    }
 }

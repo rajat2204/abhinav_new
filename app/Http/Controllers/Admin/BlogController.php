@@ -69,7 +69,7 @@ class BlogController extends Controller
                 return ucfirst($item['title']);
             })
             ->editColumn('description',function($item){
-                return ucfirst(str_limit(html_entity_decode(strip_tags($item['description'])),100));
+                return ucfirst(str_limit(strip_tags(preg_replace("/&#?[a-z0-9]{2,8};/i","",$item['description'])),100));
             })
             ->editColumn('image',function($item){
                 if (!empty($item['image'])) {
