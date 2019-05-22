@@ -1,0 +1,26 @@
+@import url("https://fonts.googleapis.com/css?family=Fira+Sans");
+@import url("https://fonts.googleapis.com/css?family=Playfair+Display");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+
+  font-family: "Fira Sans", sans-serif;
+}
+
+$sectionheadings: 40px;
+$maginofsection: 10vh;
+$designmargin: 3vh;
+$mecolorinwesite:#FF8B26;
+
+@mixin container {
+  width: 90%;
+  margin: auto;
+}
+
+@import "./index";
+@import "./interview";
+
+@import "./about";
+@import "./contact";
+@import "./responsive";

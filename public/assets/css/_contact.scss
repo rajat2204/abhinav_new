@@ -1,0 +1,99 @@
+#contact-page {
+  .contact-reach-bannner {
+    background: url("../images/Path\ 137.jpg");
+    width: 90%;
+    margin: auto;
+    position: relative;
+    height: 80vh;
+    color: black;
+
+    .reach-contact-content {
+      width: 100%;
+      position: absolute;
+      font-size: 66px;
+      text-align: center;
+      left: 0;
+      top: 5%;
+      .content-wrapper {
+        position: relative;
+        .reach-contact-content-sub {
+          color: $mecolorinwesite;
+
+          
+        }
+        &::after {
+            content: "";
+            width: 17%;
+            height: 5px;
+            background: #6c5dac;
+            left: 60%;
+            top: 71px;
+            position: absolute;
+        }
+      }
+    }
+
+    .contact-form {
+      position: absolute;
+      width: 40%;
+      top: 26%;
+      left: 28%;
+
+      form {
+        .form-input {
+          position: relative;
+          margin-bottom: 10px;
+          label {
+            color: #6c5dac;
+            font-size: 21px;
+
+            span {
+              color: $mecolorinwesite;
+            }
+          }
+          .inputs {
+            width: 100%;
+            border: none;
+            outline: none;
+            padding: 7px 0px;
+            font-size: 20px;
+            margin: 7px 2px;
+            border-radius: 6px;
+            background: transparent;
+          }
+          .input-bar {
+            background: lightgray;
+            height: 4px;
+            width: 100%;
+            position: absolute;
+            transform: scale(1);
+            bottom: 8px;
+            transition: all 0.33s ease-in-out;
+          }
+
+          &:hover .input-bar {
+            background: $mecolorinwesite;
+            transform: scale(1);
+          }
+        }
+        #Conntactbtn {
+          padding: 10px 15px;
+          font-size: 17px;
+          outline: none;
+          border: none;
+          border: 1px solid #6c5dac;
+          border-radius: 4px;
+          color: $mecolorinwesite;
+          background: no-repeat;
+          cursor: pointer;
+
+          transition: all 0.3s ease-in-out;
+
+          &:active {
+            transform: scale(0.9);
+          }
+        }
+      }
+    }
+  }
+}

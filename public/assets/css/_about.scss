@@ -1,0 +1,45 @@
+#about-page{
+     
+    .about-banner{
+        @include container;
+        height: 75vh;
+        
+        color: white;
+        text-align: center;
+        position: relative;
+        overflow: hidden;
+        z-index: 1;
+        .banner-image{
+           width: 100%;
+           height: 100%;
+           img{
+               width: 100%;
+               height: 100%;
+               object-fit: cover;
+           }
+        }
+       &::before{
+           position: absolute;
+           z-index: 0;
+           content: "";
+           height: 100%;
+           width: 100%;
+           left: 0;
+           top: 0;
+           background: rgba(0, 0, 0, 0.45);
+       } 
+       .content-banner{
+        position: absolute;
+        color: white;
+        z-index: 3;
+        text-align: left;
+        font-size: 88px;
+        left: 8%;
+        top: 50%;
+        width: 100%;
+         .content-banner-subcontent{
+            color: $mecolorinwesite
+         }
+       }
+    }
+}
