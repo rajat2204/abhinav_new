@@ -40,11 +40,6 @@ Route::group(['prefix' => 'category'],function(){
 		Route::post('/status', 'CategoryController@changeStatus');
 	});
 
-Route::resource('contact','ContactController');
-Route::group(['prefix' => 'contact'],function(){
-		Route::post('/status', 'ContactController@changeStatus');
-	});
-
 Route::resource('social','SocialController');
 Route::group(['prefix' => 'social'],function(){
 		Route::post('/status', 'SocialController@changeStatus');

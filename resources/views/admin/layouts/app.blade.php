@@ -32,7 +32,7 @@
 	</head>
 
 	<body class="hold-transition skin-blue sidebar-mini">
-	    <div id="cover"></div>
+	    <!-- <div id="cover"></div> -->
 	    <div class="wrapper">
 	            @yield('content')
 	    </div>
