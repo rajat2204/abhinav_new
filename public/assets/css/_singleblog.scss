@@ -1,0 +1,31 @@
+#single-blog{
+   
+    @include container;
+    margin-top: $maginofsection;
+    margin-bottom: $maginofsection;
+    .single-blog-wrapper{
+        @include container;
+        padding: 5vh;
+        border: 1px solid lightblue  ;
+        .single-blog-heading{
+            font-size: 38px;
+            font-weight: 400;
+            margin-bottom: 25px;
+        }
+        .single-blog-image{
+          width: 100%;
+          height: 60vh;
+          border-radius: 10px;
+          img{
+               width: 100%; 
+               height: 100%;
+               object-fit: cover;
+
+          }
+          
+        }
+        .single-blog-description {
+            margin-top: 29px;
+        }
+    }
+}
