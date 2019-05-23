@@ -35,7 +35,7 @@
   $(document).ready(function(){
     $(".filter_type").click(function(){
       var $value = $(this).attr("id");
-      alert($value);
+      // alert($value);
           $.ajax({
               type: 'POST',
               url: "{{url('categoryblog')}}",
