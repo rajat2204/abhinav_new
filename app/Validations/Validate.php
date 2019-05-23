@@ -79,17 +79,26 @@ class Validate
         $validations = [
         	'category_id' 	=> $this->validation('name'),
             'title'         => $this->validation('name'),
+            'slug'  		=> array_merge($this->validation('slug_no_space'),[Rule::unique('blog')]),
 			'description'  	=> $this->validation('description'),
         	'image' 		=> $this->validation('photo'),
     	];
 
     	if($action =='edit'){
 			$validations['image'] 			= $this->validation('photo_null');
+			$validations['slug'] = array_merge($this->validation('slug_no_space'),[
+				Rule::unique('blog')->where(function($query){
+					$query->where('id','!=',$this->data->id);
+				})
+			]);
 		}
     	
         $validator = \Validator::make($this->data->all(), $validations,[
     		'category_id.required' 		   =>  'Category Name is required.',
     		'title.required' 	           =>  'Blog Title is required.',
+    		'slug.required'     		   =>  'Blog Slug is Required.',
+      		'slug.unique'     			   =>  'This Blog Slug has already been taken.',
+      		'slug.alpha_dash'     		   =>  'No spaces allowed in Blog slug.The Slug may only contain letters, numbers, dashes and underscores.',
     		'description.required' 		   =>  'Blog Description is required.',
     		'image.required' 		       =>  'Blog Image is required.',
             'image.mimes'                  =>  'Image should be in jpg,jpeg or png format.',
@@ -101,10 +110,22 @@ class Validate
 	public function createCategory($action='add'){
         $validations = [
             'name' 		        => $this->validation('name'),
+            'slug'  			=> array_merge($this->validation('slug_no_space'),[Rule::unique('category')]),
     	];
+
+    	if($action =='edit'){
+			$validations['slug'] = array_merge($this->validation('slug_no_space'),[
+				Rule::unique('category')->where(function($query){
+					$query->where('id','!=',$this->data->id);
+				})
+			]);
+		}
     	
       	$validator = \Validator::make($this->data->all(), $validations,[
       	'name.required'     			=> 'Category Name is Required.',
+      	'slug.required'     			=> 'Category Slug is Required.',
+      	'slug.unique'     				=> 'This Category Slug has already been taken.',
+      	'slug.alpha_dash'     			=> 'No spaces allowed in category slug.The Slug may only contain letters, numbers, dashes and underscores.',
       	]);
       	return $validator;		
 	}

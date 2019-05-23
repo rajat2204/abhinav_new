@@ -76,6 +76,7 @@ class CategoryController extends Controller
             ])
             ->addColumn(['data' => 'rownum', 'name' => 'rownum','title' => 'S No','orderable' => false, 'width' => 1])
             ->addColumn(['data' => 'name', 'name' => 'name','title' => 'Category Name','orderable' => false, 'width' => 120])         
+            ->addColumn(['data' => 'slug', 'name' => 'slug','title' => 'Category Slug','orderable' => false, 'width' => 120])         
             ->addColumn(['data' => 'status','name' => 'status','title' => 'Status','orderable' => false, 'width' => 120])
             ->addAction(['title' => 'Actions', 'orderable' => false, 'width' => 120]);
         return view('admin.home')->with($data);

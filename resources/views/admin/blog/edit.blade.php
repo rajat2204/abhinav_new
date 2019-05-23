@@ -29,6 +29,11 @@
           <input type="text" class="form-control" placeholder="Enter Blog Title..." name="title" value="{{!empty($blog['title'])?$blog['title']:''}}">
         </div>
 
+        <div class="form-group">
+          <label>Blog Slug:</label>
+          <input type="text" class="form-control" placeholder="Enter Blog Slug..." name="slug" value="{{!empty($blog['slug'])?$blog['slug']:''}}">
+        </div>
+
           
         <div class="form-group">
           <label>Blog Description:</label>

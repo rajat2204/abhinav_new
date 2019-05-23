@@ -182,7 +182,7 @@
         </div>
         @foreach($blog as $blogs)
         <div class="col col2">
-             <a href="{{url('blog')}}/{{(___encrypt($blogs['id']))}}">
+             <a href="{{url('blog')}}/{{$blogs['slug']}}">
                 <img src="{{url('assets/img/blogs')}}/{{$blogs['image']}}" alt="">
                 <div class="col-content">
                     {{$blogs['title']}}

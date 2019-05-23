@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Category extends Model
 {
     protected $table = 'category';
-    protected $fillable = ['id','name','status','created_at','updated_at'];
+    protected $fillable = ['id','name','slug','status','created_at','updated_at'];
 
     public static function change($userID,$data){
         $isUpdated = false;

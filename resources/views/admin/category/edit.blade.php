@@ -19,6 +19,11 @@
           <input type="text" class="form-control" placeholder="Enter Category Name..." name="name" value="{{!empty($category['name'])?$category['name']:''}}">
         </div>
 
+        <div class="form-group">
+          <label>Category Slug:</label>
+          <input type="text" class="form-control" placeholder="Enter Category Slug..." name="slug" value="{{!empty($category['slug'])?$category['slug']:''}}">
+        </div>
+
         <div class="box-footer">
           <a href="{{url('admin/category')}}" class="btn btn-default">Cancel</a>
           <button type="button" data-request="ajax-submit" data-target='[role="edit-category"]' class="btn btn-info pull-right">Submit</button>

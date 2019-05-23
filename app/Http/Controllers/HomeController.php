@@ -52,11 +52,10 @@ class HomeController extends Controller
 		return view('front_home',$data);
     }
 
-    public function singleBlog(Request $request,$id){
+    public function singleBlog(Request $request,$slug){
         $data['view'] = 'front.singleblog';
         $data['social'] = _arefy(SocialMedia::where('status','active')->get());
-        $id = ___decrypt($id);
-        $where = 'id = "'.$id.'"';
+        $where = 'slug = "'.$slug.'"';
         $data['blog'] = _arefy(Blog::list('single',$where));
         return view('front_home',$data);
     }

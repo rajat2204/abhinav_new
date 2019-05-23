@@ -24,6 +24,11 @@
         </div>
 
         <div class="form-group">
+          <label>Blog Slug:</label>
+          <input type="text" class="form-control" placeholder="Enter Blog Slug..." name="slug">
+        </div>
+
+        <div class="form-group">
           <label>Blog Description:</label>
           <textarea id="description" name="description" rows="6" cols="80"></textarea>
         </div>
