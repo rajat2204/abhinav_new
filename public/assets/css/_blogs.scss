@@ -43,6 +43,25 @@
     color: #1daa9b;
     text-align: center;
   }
+
+  .button-subcategory-menu{
+    position: fixed;
+    left: 0;
+    top: 124px;
+    width: 152px;
+    height: 43px;
+    text-align: center;
+    background: #6c5dac;
+    color: white;
+    padding-top: 12px;
+    border-bottom-right-radius: 5px;
+border-top-right-radius: 5px;
+   transform: translateX(-100%);
+   transition: all .5s ease-in-out;
+   cursor: pointer;
+   
+    
+  }
   .category-buttons-wrapper {
     margin: $thispagesectionmargin auto;
     .button-subcatogory {

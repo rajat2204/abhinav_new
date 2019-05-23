@@ -397,12 +397,40 @@
           .all-blogs-wrapper {
             
             grid-template-columns: 1fr;
+
             
             
           }
         }
         
       }
+      .button-subcategory-menu{
+        
+       transform: translateX(0%);
+       
+        
+      }
+
+      .category-buttons-wrapper{
+        width: 149px;
+        background: black;
+        border-radius: 6px;
+        text-align: center;
+        position: fixed;
+        padding: 18px;
+        left: 0;
+        z-index: 5;
+        transform: translateX(-100%) scale(0);
+        
+         .button-subcatogory{
+           margin-bottom: 5px;
+         }
+      }
+      .category-buttons-wrapper-come{
+        transform:translateX(0%) scale(1);
+        transition: all .33s ease-in-out;
+      } 
+      
     }
     #single-blog{
    

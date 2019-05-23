@@ -1,13 +1,24 @@
 <div id="blog-page">
+  
   <div class="blog-page-heading">
-     My Blogs
+    <div class="heading-image">
+    <img src="{{url('assets/img/Union 42.png')}}" alt="">
+    </div>
+    <div class="content">
+      My Blogs
+    </div>
   </div>
+  <div class="button-subcategory-menu">
+    CATEGORIES <span class="aminatetheicon"> > </span> 
+ </div>
   <div class="category-buttons-wrapper">
       <button class="button-subcatogory active filter_type" id="all">All Blogs</button>
       @foreach($category as $categories)
       <button class="button-subcatogory filter_type" id="{{$categories['id']}}">{{$categories['name']}}</button>
       @endforeach
   </div>
+
+  
   <div class="blog-wrapper">
     <div id="all-blogs" class="acitve-blog category-active">
       <div class="all-blogs-wrapper" id="categoryblog">
@@ -45,6 +56,19 @@
               }
           });
       });
-  });
+
+      $(".button-subcategory-menu").click(function(){
+        
+        document.querySelector(".category-buttons-wrapper").classList.toggle('category-buttons-wrapper-come');
+      });
+      
+      });
+</script>
+<script>
+window.onscroll = function() {scrollFunction()};
+
+function scrollFunction() {
+  document.querySelector(".category-buttons-wrapper").classList.remove('category-buttons-wrapper-come');
+}
 </script>
 @endsection
