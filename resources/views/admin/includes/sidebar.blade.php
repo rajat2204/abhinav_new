@@ -12,7 +12,7 @@
       <ul class="sidebar-menu nav_active_menu" data-widget="tree">
         <li class="dashboard-icon">
           <a href="{{url('admin/category')}}">
-            <i class="fa fa-dashboard"></i> <span>Category</span>
+            <i class="fa fa-tasks"></i> <span>Category</span>
           </a>
         </li>
         <li class="dashboard-icon">
@@ -28,15 +28,9 @@
             </span>
           </a>
           <ul class="treeview-menu">
-            <!-- <li class="taxpercent-icon"><a href="{{url('admin/contact')}}">Contact Address</a></li> -->
             <li class="units-icon"><a href="{{url('admin/social')}}">Social Media</a></li>
           </ul>
         </li>
-        <!-- <li class="help-icon">
-          <a href="{{url('admin/logout')}}">
-            <i class="fa fa-question-circle"></i><span>Logout</span>
-          </a>
-        </li> -->
       </ul>
     </section>
     <!-- /.sidebar -->

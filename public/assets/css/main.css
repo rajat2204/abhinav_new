@@ -110,6 +110,10 @@
       grid-template-columns: 1fr 1fr;
 }
 
+.category-buttons-wrapper {
+    text-align: center;
+}
+
 .banner-wrapper .banner-full-wrapper .banner-content-section .text-content {
   width: 100%;
   font-size: 45px;

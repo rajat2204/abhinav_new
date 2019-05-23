@@ -66,7 +66,6 @@ class HomeController extends Controller
             $where.=' AND category_id = '."'$request->value'";
         }
         $data['ajaxblog'] = _arefy(Blog::list('array',$where,['*'],'id-desc'));
-        $data['social'] = _arefy(SocialMedia::where('status','active')->get());
         $html= view('front.ajaxcategory',$data);
         return response($html);
     }
