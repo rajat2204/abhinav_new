@@ -60,12 +60,14 @@ class HomeController extends Controller
         return view('front_home',$data);
     }
 
-    public function categoryBlog(Request $request,$id){
-        $data['view'] = 'front.categoryblog';
+    public function categoryBlog(Request $request){
+        $where = 'status = "active"';
+        if($request->value !='all'){
+            $where.=' AND category_id = '."'$request->value'";
+        }
+        $data['ajaxblog'] = _arefy(Blog::list('array',$where,['*'],'id-desc'));
         $data['social'] = _arefy(SocialMedia::where('status','active')->get());
-        $id = ___decrypt($id);
-        $where = 'category_id = "'.$id.'"';
-        $data['blog'] = _arefy(Blog::list('array',$where));
-        return view('front_home',$data);
+        $html= view('front.ajaxcategory',$data);
+        return response($html);
     }
 }

@@ -3,14 +3,14 @@
      My Blogs
   </div>
   <div class="category-buttons-wrapper">
-      <button class="button-subcatogory filter_type acitve">All Blogs</button>
+      <button class="button-subcatogory active filter_type" id="all">All Blogs</button>
       @foreach($category as $categories)
-      <a href="{{url('category')}}/{{___encrypt($categories['id'])}}"><button class="button-subcatogory filter_type"> {{$categories['name']}}</button></a>
+      <button class="button-subcatogory filter_type" id="{{$categories['id']}}">{{$categories['name']}}</button>
       @endforeach
   </div>
   <div class="blog-wrapper">
     <div id="all-blogs" class="acitve-blog category-active">
-      <div class="all-blogs-wrapper">
+      <div class="all-blogs-wrapper" id="categoryblog">
         @foreach($blogmore as $blog)
           <div class="blog-card">
               <div class="blog-card-image">
@@ -29,3 +29,22 @@
     </div>
   </div>
 </div>
+
+@section('requirejs')
+<script type="text/javascript">
+  $(document).ready(function(){
+    $(".filter_type").click(function(){
+      var $value = $(this).attr("id");
+      alert($value);
+          $.ajax({
+              type: 'POST',
+              url: "{{url('categoryblog')}}",
+              data:{value:$value},
+              success: function(data) {
+                $("#categoryblog").html(data);
+              }
+          });
+      });
+  });
+</script>
+@endsection
