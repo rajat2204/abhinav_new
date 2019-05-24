@@ -188,9 +188,9 @@ class BlogController extends Controller
           $data = $request->all();
 
           if ($file = $request->file('image')){
-                $photo_name = time().$request->file('image')->getClientOriginalName();
-                $file->move('assets/img/blogs',$photo_name);
-                $data['image'] = $photo_name;
+              $photo_name = time().$request->file('image')->getClientOriginalName();
+              $file->move('assets/img/blogs',$photo_name);
+              $data['image'] = $photo_name;
             }
           
           $blog->update($data);

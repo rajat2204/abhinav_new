@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Press extends Model
 {
     protected $table = 'press';
-    protected $fillable = ['id','title','slug','description','url','status','created_at','updated_at'];
+    protected $fillable = ['id','title','slug','image','description','url','status','created_at','updated_at'];
 
     public static function change($userID,$data){
         $isUpdated = false;

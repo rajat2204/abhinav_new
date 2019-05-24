@@ -119,16 +119,13 @@ class PressController extends Controller
         }else{
             $press = new Press();
             $press->fill($request->all());
-
             if ($file = $request->file('image')){
                 $photo_name = time().$request->file('image')->getClientOriginalName();
                 $file->move('assets/img/press',$photo_name);
                 $press['image'] = $photo_name;
             }
-
             $press->save();
             
-
             $this->status   = true;
             $this->modal    = true;
             $this->alert    = true;
@@ -160,6 +157,7 @@ class PressController extends Controller
         $data['view'] = 'admin.press.edit';
         $id = ___decrypt($id);
         $data['press'] = _arefy(Press::where('id',$id)->first());
+        // dd($data['press']);
         return view('admin.home',$data);
     }
 
@@ -177,17 +175,18 @@ class PressController extends Controller
       $validator  = $validation->addPress('edit');
       if ($validator->fails()) {
           $this->message = $validator->errors();
-      }else{
+      }
+      else{
           $press = Press::findOrFail($id);
           $data = $request->all();
 
           if ($file = $request->file('image')){
-                $photo_name = time().$request->file('image')->getClientOriginalName();
-                $file->move('assets/img/press',$photo_name);
-                $data['image'] = $photo_name;
-            }
-          
+              $photo_name = time().$request->file('image')->getClientOriginalName();
+              $file->move('assets/img/press',$photo_name);
+              $data['image'] = $photo_name;
+          }
           $press->update($data);
+
           $this->status   = true;
           $this->modal    = true;
           $this->alert    = true;

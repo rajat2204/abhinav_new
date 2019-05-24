@@ -22,7 +22,7 @@
         </li>
         <li class="dashboard-icon">
           <a href="{{url('admin/press')}}">
-            <i class="fa fa-dashboard"></i> <span>Press</span>
+            <i class="fa fa-picture-o"></i> <span>Press</span>
           </a>
         </li>
         <li class="treeview configuration-icon">
