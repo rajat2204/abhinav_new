@@ -96,9 +96,7 @@
   width: 90%;
   margin: auto;
   position: relative;
-
   background: url("../img/Path 137.png");
- 
   background-position: center;
   background-size: cover;
   padding: 10px;
@@ -227,8 +225,7 @@
 .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "box1 box2"
- "box3 box4";
+      grid-template-areas: "box1 box2" "box3 box4";
 }
 
 .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container .box1 {
@@ -316,8 +313,8 @@
 
 .interview-talks-section .link-load-more a {
   text-decoration: none;
-  color: white;
-  background: #c4302b;
+  color: black;
+  border: 1px solid #c4302b;
   padding: 8px 17px;
   border-radius: 10px;
 }
@@ -399,8 +396,8 @@
 
 .my-blogs .link-load-more a {
   text-decoration: none;
-  color: white;
-  background: #c4302b;
+  color: black;
+  border: 1px solid #c4302b;
   padding: 8px 17px;
   border-radius: 10px;
 }
@@ -440,8 +437,14 @@
       grid-template-columns: 1fr 3fr;
 }
 
+.media-coverage .media-coverage-section2 .all-wrapper-media-contetn .row .image-wrapper {
+  height: 174px;
+  width: 174px;
+}
+
 .media-coverage .media-coverage-section2 .all-wrapper-media-contetn .row .image-wrapper img {
   width: 100%;
+  height: 100%;
 }
 
 .media-coverage .media-coverage-section2 .all-wrapper-media-contetn .row .image-wrapper-content {
@@ -608,7 +611,7 @@
 }
 
 #contact-page .contact-reach-bannner {
-  background-image: url("../img/Path 137.jpg");
+  background: url("../images/Path 137.jpg");
   width: 90%;
   margin: auto;
   position: relative;
@@ -897,11 +900,11 @@
 }
 
 #press-page .press-content-section .press-wrapper .blog-card .link-wrapper a {
-  padding: 10px;
-  background: #6c5dac;
+  padding: 5px 10px;
   border-radius: 4px;
   margin-top: 10px;
-  color: white;
+  color: #6c5dac;
+  border: 1px solid #6c5dac;
 }
 
 #press-page .pagination-links {
@@ -910,8 +913,8 @@
 
 #press-page .pagination-links .links {
   text-decoration: none;
-  background: #6c5dac;
-  color: white;
+  border: 1px solid #6c5dac;
+  color: black;
   height: 18px;
   width: 18px;
   border-radius: 6px;
@@ -1114,10 +1117,7 @@
     text-align: center;
   }
   .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container {
-        grid-template-areas: "box1"
- "box2"
- "box3"
- "box4";
+        grid-template-areas: "box1" "box2" "box3" "box4";
     width: 80%;
     margin: auto;
   }
@@ -1438,10 +1438,7 @@
     text-align: center;
   }
   .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container {
-        grid-template-areas: "box1"
- "box2"
- "box3"
- "box4";
+        grid-template-areas: "box1" "box2" "box3" "box4";
   }
   .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container .box {
     text-align: center;

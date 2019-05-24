@@ -20,11 +20,12 @@
                 .link-wrapper{
                     margin-top: 15px;
                     a{
-                        padding: 10px;
-                        background: #6c5dac;
+                        padding: 5px 10px;
+
                         border-radius: 4px;
                         margin-top: 10px;
-                        color: white;
+                        color:#6c5dac;
+                        border: 1px solid #6c5dac;
                         
                     }
                 }
@@ -36,8 +37,8 @@
         text-align:center;
         .links{
             text-decoration: none;
-            background: #6c5dac;
-            color: white;
+            border: 1px solid #6c5dac;
+            color: black;
             height: 18px;
             width: 18px;
             border-radius: 6px;

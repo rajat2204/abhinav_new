@@ -270,8 +270,8 @@
       padding-right: 5vh;
       a {
         text-decoration: none;
-        color: white;
-        background: #c4302b;
+        color: black;
+        border: 1px solid #c4302b;
         padding: 8px 17px;
         border-radius: 10px;
       }
@@ -348,8 +348,8 @@
       padding-right: 5vh;
       a {
         text-decoration: none;
-        color: white;
-        background: #c4302b;
+        color: black;
+        border: 1px solid #c4302b;
         padding: 8px 17px;
         border-radius: 10px;
       }
@@ -384,8 +384,11 @@
           grid-template-columns: 1fr 3fr;
   
           .image-wrapper {
+            height: 174px;
+            width: 174px;
             img {
               width: 100%;
+              height: 100%;
             }
           }
           .image-wrapper-content {
