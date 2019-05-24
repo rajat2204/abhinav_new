@@ -23,7 +23,6 @@
                     </div>        
                 </div>
                 @endforeach
-
         </div>
     </div>
     <div class="pagination-links">
