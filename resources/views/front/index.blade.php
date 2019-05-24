@@ -221,7 +221,7 @@
                     </div>
                     <div class="image-wrapper-content">
                         <div class="first-content">{{$medias['title']}}</div>
-                        <div class="second-content">{{strip_tags(str_limit(preg_replace("/&#?[a-z0-9]{2,8};/i","",$medias['description']),50))}}</div>
+                        <div class="second-content" title="{{strip_tags(preg_replace("/&#?[a-z0-9]{2,8};/i","",$medias['description']))}}">{{strip_tags(str_limit(preg_replace("/&#?[a-z0-9]{2,8};/i","",$medias['description']),50))}}</div>
                         <div class="third-content">
                             <a href="{{$medias['url']}}" target="_blank">Read the Article</a>
                         </div>
