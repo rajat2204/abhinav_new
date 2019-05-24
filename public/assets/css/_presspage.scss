@@ -1,0 +1,11 @@
+#press-page{
+  @include cotainer;
+  margin-top:  $designmargin;
+  margin-bottom: $designmargin;
+  #press-page-header{
+    font-size: $sectionheadings;
+    font-weight: bold;
+    color: #1daa9b;
+    text-align: center;
+  }
+}     
