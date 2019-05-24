@@ -74,7 +74,7 @@ class HomeController extends Controller
     public function press(Request $request){
         $data['view']='front.press';
         $data['social'] = _arefy(SocialMedia::where('status','active')->get());
-        $data['press'] = _arefy(Press::where('status','active')->get());
+        $data['press'] = _arefy(Press::where('status','active')->paginate(6));
         // dd($data['press']);
         return view('front_home',$data);
     }

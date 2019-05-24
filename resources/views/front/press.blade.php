@@ -10,7 +10,7 @@
     </div>
     <div class="press-content-section">
         <div class="press-wrapper">
-            @foreach($press as $presss)
+            @foreach($press['data'] as $presss)
             <div class="blog-card">
                 <div class="blog-card-image">
                     <img src="{{url('assets/img/press')}}/{{$presss['image']}}" alt="image not found" >
