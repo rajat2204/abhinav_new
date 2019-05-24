@@ -28,8 +28,8 @@
               <li class="userlinks">
                 <ul class="dropdown-menu">
                   <!-- <li><a href="/soft/realestate/admin/Users/myProfile">My Profile&nbsp;<i class="pull-right fa fa-pencil"></i></a></li> -->
-            <!-- <li><a href="{{url('admin/changepassword')}}">Change Password&nbsp;<i class="pull-right fa fa-cog"></i></a></li> -->
-            <!-- <li class="divider"></li> -->
+            <li><a href="{{url('admin/changepassword')}}">Change Password&nbsp;<i class="pull-right fa fa-cog"></i></a></li>
+            <li class="divider"></li>
             <li><a href="{{url('admin/logout')}}">Sign Out&nbsp;<i class="pull-right fa fa-power-off"></i></a></li>
                 </ul>
               </li>

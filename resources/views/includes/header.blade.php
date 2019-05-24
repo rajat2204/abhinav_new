@@ -10,7 +10,7 @@
                     <li class="links"><a href="{{url('/')}}" class="link">Home</a></li>
                     <li class="links"><a href="{{url('about')}}" class="link">About</a></li>
                     <li class="links"><a href="{{url('interviews')}}" class="link">Interviews</a></li>
-                    <li class="links"><a href="javascript:void(0);" class="link">Press</a></li>
+                    <li class="links"><a href="{{url('press')}}" class="link">Press</a></li>
                     <li class="links"><a href="{{url('blog')}}" class="link">Blogs</a></li>
                     <li class="links"><a href="{{url('contact')}}">ContactUs</a></li>
                 </ul>

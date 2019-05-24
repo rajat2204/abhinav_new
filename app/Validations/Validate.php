@@ -130,6 +130,22 @@ class Validate
       	return $validator;		
 	}
 
+	public function changepassword($action='add'){
+        $validations = [
+        	'password' 					=> $this->validation('password'),
+			'new_password'  			=> $this->validation('password'),
+            'confirm_password' 		    => $this->validation('password'),
+    	];
+    	
+        $validator = \Validator::make($this->data->all(), $validations,[
+    		'password.required' 	=>  'Current Password is required.',
+    		'new_password.required' 		=>  'New password is required.',
+    		'confirm_password.required' 	=>  'Confirm Password is required.',
+
+    	]);
+        return $validator;		
+	}
+
 	public function addsocialmedia(){
 		$validations = [
         	'url' 				=> $this->validation('url'),

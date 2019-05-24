@@ -19,10 +19,13 @@ Route::get('/interviews','HomeController@interview');
 Route::get('/blog','HomeController@blogs');
 Route::get('blog/{slug}','HomeController@singleBlog');
 Route::post('categoryblog','HomeController@categoryBlog');
+Route::get('/press','HomeController@press');
 
 // Admin Section
 Route::get('admin/login','Admin\LoginController@login');
 Route::post('admin/login','Admin\LoginController@authentication');
+Route::get('admin/changepassword','Admin\LoginController@changePassword');
+Route::post('admin/changepassword','Admin\LoginController@adminchangePass');
 Route::group(['prefix' => 'admin', 'namespace' => 'Admin','middleware'=>'admin'],function(){
 	Route::get('logout',function(){
 		\Auth::logout();

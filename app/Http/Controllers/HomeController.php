@@ -69,4 +69,10 @@ class HomeController extends Controller
         $html= view('front.ajaxcategory',$data);
         return response($html);
     }
+
+    public function press(Request $request){
+        $data['view']='front.press';
+        $data['social'] = _arefy(SocialMedia::where('status','active')->get());
+        return view('front_home',$data);
+    }
 }
