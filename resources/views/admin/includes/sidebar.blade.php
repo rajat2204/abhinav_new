@@ -20,6 +20,11 @@
             <i class="fa fa-dashboard"></i> <span>Blog</span>
           </a>
         </li>
+        <li class="dashboard-icon">
+          <a href="{{url('admin/press')}}">
+            <i class="fa fa-dashboard"></i> <span>Press</span>
+          </a>
+        </li>
         <li class="treeview configuration-icon">
           <a href="javascript:void(0);">
             <i class="fa fa-cogs fa-fw"></i> <span>General Settings</span>

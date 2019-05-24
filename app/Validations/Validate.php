@@ -156,4 +156,36 @@ class Validate
 		]);
 		return $validator;
 	}
+
+	public function addPress($action='add'){
+        $validations = [
+            'title'         => $this->validation('name'),
+            'slug'  		=> array_merge($this->validation('slug_no_space'),[Rule::unique('press')]),
+            'url' 			=> $this->validation('url'),
+			'description'  	=> $this->validation('description'),
+        	'image' 		=> $this->validation('photo'),
+    	];
+
+    	if($action =='edit'){
+			$validations['image'] 			= $this->validation('photo_null');
+			$validations['slug'] = array_merge($this->validation('slug_no_space'),[
+				Rule::unique('press')->where(function($query){
+					$query->where('id','!=',$this->data->id);
+				})
+			]);
+		}
+    	
+        $validator = \Validator::make($this->data->all(), $validations,[
+    		'title.required' 	           =>  'Press Title is required.',
+    		'slug.required'     		   =>  'Press Slug is Required.',
+      		'slug.unique'     			   =>  'This Press Slug has already been taken.',
+      		'slug.alpha_dash'     		   =>  'No spaces allowed in Press slug.The Slug may only contain letters, numbers, dashes and underscores.',
+      		'url.required'				   =>  'Press URL is required.',
+    		'description.required' 		   =>  'Press Description is required.',
+    		'image.required' 		       =>  'Press Image is required.',
+            'image.mimes'                  =>  'Image should be in jpg,jpeg or png format.',
+
+    	]);
+        return $validator;		
+	}
 }

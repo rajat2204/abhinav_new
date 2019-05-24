@@ -1,5 +1,3 @@
-
-
 <div id="press-page">
     {{-- press page header section  --}}
     <div class="press-page-header">
@@ -11,39 +9,19 @@
         </div>
     </div>
     <div class="press-content-section">
-        
         <div class="press-wrapper">
-                <div class="blog-card">
-            
-                        <div class="blog-card-image">
-                            <img src="{{asset('assets/img/Beaches-in-India_1.jpg')}}" alt="image not found" >
-                        </div> 
-                        <div class="blog-card-heading">
-                            Source Heading shows here.. 
-                        </div>
-                        <div class="blog-card-content">
-                            Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, error, atque, magnam dicta voluptates autem reprehenderit facilis quo rem nam nisi. Error magnam nam ab maiores mollitia corporis quas. Suscipit.  
-                         </div> 
-                         <div class="link-wrapper">
-                                <a href="" class="read-more">Source</a>
-                            </div>        
-                    </div>
-                    <div class="blog-card">
-            
-                            <div class="blog-card-image">
-                                <img src="{{asset('assets/img/Beaches-in-India_1.jpg')}}" alt="image not found" >
-                            </div> 
-                            <div class="blog-card-heading">
-                                Source Heading shows here.. 
-                            </div>
-                            <div class="blog-card-content">
-                                Lorem ipsum dolor, sit amet consectetur adipisicing elit. Quidem, error, atque, magnam dicta voluptates autem reprehenderit facilis quo rem nam nisi. Error magnam nam ab maiores mollitia corporis quas. Suscipit.  
-                             </div> 
-                             <div class="link-wrapper">
-                                    <a href="" class="read-more">Source</a>
-                                </div>        
-                        </div>
+            @foreach($press as $presss)
+            <div class="blog-card">
+                <div class="blog-card-image">
+                    <img src="{{url('assets/img/press')}}/{{$presss['image']}}" alt="image not found" >
+                </div> 
+                <div class="blog-card-heading">{{$presss['title']}}</div>
+                <div class="blog-card-content" title="{{strip_tags($presss['description'])}}">{{strip_tags(str_limit(preg_replace("/&#?[a-z0-9]{2,8};/i","",$presss['description']),250))}}</div> 
+                <div class="link-wrapper">
+                    <a href="{{$presss['url']}}" target="_blank" class="read-more">Source</a>
+                </div>        
+            </div>
+            @endforeach
         </div>
     </div>
-
 </div>

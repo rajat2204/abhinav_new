@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Blog;
+use App\Models\Press;
 use App\Models\SocialMedia;
 use App\Models\Category;
 use Illuminate\Http\Request;
@@ -73,6 +74,8 @@ class HomeController extends Controller
     public function press(Request $request){
         $data['view']='front.press';
         $data['social'] = _arefy(SocialMedia::where('status','active')->get());
+        $data['press'] = _arefy(Press::where('status','active')->get());
+        // dd($data['press']);
         return view('front_home',$data);
     }
 }

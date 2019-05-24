@@ -31,20 +31,27 @@ Route::group(['prefix' => 'admin', 'namespace' => 'Admin','middleware'=>'admin']
 		\Auth::logout();
           return redirect('admin/login');
 	});
-
-
+// Blog Section 
 Route::resource('blog','BlogController');
 Route::group(['prefix' => 'blog'],function(){
 		Route::post('/status', 'BlogController@changeStatus');
 	});
-	
+
+// Category Section 
 Route::resource('category','CategoryController');
 Route::group(['prefix' => 'category'],function(){
 		Route::post('/status', 'CategoryController@changeStatus');
 	});
 
+// Social Section
 Route::resource('social','SocialController');
 Route::group(['prefix' => 'social'],function(){
 		Route::post('/status', 'SocialController@changeStatus');
+	});
+
+// Press Section
+Route::resource('press','PressController');
+Route::group(['prefix' => 'press'],function(){
+		Route::post('/status', 'PressController@changeStatus');
 	});
 });
