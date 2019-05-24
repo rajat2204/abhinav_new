@@ -894,6 +894,35 @@
   color: white;
 }
 
+#press-page .pagination-links {
+  text-align: center;
+}
+
+#press-page .pagination-links .links {
+  text-decoration: none;
+  background: #6c5dac;
+  color: white;
+  height: 18px;
+  width: 18px;
+  border-radius: 6px;
+  padding: 10px;
+  -webkit-transition: all .33s linear;
+  transition: all .33s linear;
+}
+
+#press-page .pagination-links .links:hover {
+  background: black;
+  border: 1px solid #6c5dac;
+  -webkit-transform: scale(1.1);
+          transform: scale(1.1);
+}
+
+#press-page .pagination-links .links:active {
+  color: #1daa9b;
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
+}
+
 @media only screen and (max-width: 800px) {
   body {
     overflow-x: hidden;

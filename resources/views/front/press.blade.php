@@ -24,4 +24,11 @@
             @endforeach
         </div>
     </div>
+    <div class="pagination-links">
+        <a href="" class="links"><</a>
+        <a href="" class="links">1</a>
+        <a href="" class="links">2</a>
+        <a href="" class="links">3</a> 
+        <a href="" class="links">></a>
+    </div>
 </div>

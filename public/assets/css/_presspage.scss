@@ -31,4 +31,31 @@
             }
         }
     }
+
+    .pagination-links{
+        text-align:center;
+        .links{
+            text-decoration: none;
+            background: #6c5dac;
+            color: white;
+            height: 18px;
+            width: 18px;
+            border-radius: 6px;
+            padding: 10px;
+            transition: all .33s linear;
+
+            &:hover{
+                background: black;
+                border: 1px solid #6c5dac;
+                transform: scale(1.1);
+
+            }
+            &:active{
+                color: #1daa9b;
+                transform: scale(0.9);
+            }
+
+        }
+
+    }
 }
