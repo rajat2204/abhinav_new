@@ -382,6 +382,7 @@
         .row {
           display: grid;
           grid-template-columns: 1fr 3fr;
+          margin-bottom: 10px;
   
           .image-wrapper {
             height: 174px;
