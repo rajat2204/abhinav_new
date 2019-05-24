@@ -214,59 +214,20 @@
         </div>
         <div class="media-coverage-section2">
             <div class="all-wrapper-media-contetn">
+                @foreach($media as $medias)
                 <div class="row">
                     <div class="image-wrapper">
-                        
-                        <img src="{{asset('assets/img/NoPath - Copy (14).png')}}" alt="">
+                        <img src="{{url('assets/img/press')}}/{{$medias['image']}}" alt="">
                     </div>
                     <div class="image-wrapper-content">
-                        <div class="first-content">
-                            CHEDDAR | 21.11.2018
-                        </div>
-                        <div class="second-content">
-                            Trivago CFO on Returning to Profitability &
-                            The Future of Metasearch
-                        </div>
+                        <div class="first-content">{{$medias['title']}}</div>
+                        <div class="second-content">{{strip_tags(str_limit(preg_replace("/&#?[a-z0-9]{2,8};/i","",$medias['description']),50))}}</div>
                         <div class="third-content">
-                            <a href="">Read the Article</a>
+                            <a href="{{$medias['url']}}" target="_blank">Read the Article</a>
                         </div>
                     </div>
                 </div>
-                <div class="row">
-                    <div class="image-wrapper">
-                        <img src="{{asset('assets/img/NoPath - Copy (15).png')}}" alt="">
-                    </div>
-                    <div class="image-wrapper-content">
-                        <div class="first-content">
-                            CHEDDAR | 21.11.2018
-                        </div>
-                        <div class="second-content">
-                            Trivago CFO on Returning to Profitability &
-                            The Future of Metasearch
-                        </div>
-                        <div class="third-content">
-                            <a href="">Read the Article</a>
-                        </div>
-                    </div>
-                </div>
-                <div class="row">
-                    <div class="image-wrapper">
-                        <img src="{{asset('assets/img/NoPath - Copy (16).png')}}" alt="">
-                    </div>
-                    <div class="image-wrapper-content">
-                        <div class="first-content">
-                            CHEDDAR | 21.11.2018
-                        </div>
-                        <div class="second-content">
-                            Trivago CFO on Returning to Profitability &
-                            The Future of Metasearch
-                        </div>
-                        <div class="third-content">
-                            <a href="">Read the Article</a>
-                        </div>
-                    </div>
-                </div>
-
+                @endforeach
             </div>
         </div>
     </div>

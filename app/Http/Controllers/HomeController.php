@@ -21,8 +21,9 @@ class HomeController extends Controller
     public function index(Request $request){
     	$data['view']='front.index';
         $data['blog'] = _arefy(Blog::where('status','active')->orderBy('id','desc')->limit(3)->get());
+        $data['media'] = _arefy(Press::where('status','active')->orderBy('id','desc')->limit(3)->get());
     	$data['social'] = _arefy(SocialMedia::where('status','active')->get());
-    	// dd($data['social']);
+    	// dd($data['media']);
 		return view('front_home',$data);
     }
 
