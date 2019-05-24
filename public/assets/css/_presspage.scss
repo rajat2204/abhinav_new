@@ -1,11 +1,34 @@
-#press-page{
-  @include cotainer;
-  margin-top:  $designmargin;
-  margin-bottom: $designmargin;
-  #press-page-header{
-    font-size: $sectionheadings;
-    font-weight: bold;
-    color: #1daa9b;
-    text-align: center;
-  }
-}     
+#press-page {
+    @include container;
+    margin-top: $designmargin;
+    margin-bottom: $designmargin;
+    .press-page-header {
+        font-size: $sectionheadings;
+        font-weight: bold;
+        color: #1daa9b;
+        text-align: center;
+    }
+    .press-content-section {
+        margin-top: $designmargin;
+
+        .press-wrapper {
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr;
+            grid-gap: 27px;
+            .blog-card {
+                @extend .card;
+                .link-wrapper{
+                    margin-top: 15px;
+                    a{
+                        padding: 10px;
+                        background: #6c5dac;
+                        border-radius: 4px;
+                        margin-top: 10px;
+                        color: white;
+                        
+                    }
+                }
+            }
+        }
+    }
+}

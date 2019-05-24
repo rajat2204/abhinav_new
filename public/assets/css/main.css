@@ -704,7 +704,7 @@
           transform: scale(0.9);
 }
 
-.card, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card {
+.card, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card, #press-page .press-content-section .press-wrapper .blog-card {
   width: 100%;
   border-radius: 7px;
   padding: 14px;
@@ -712,35 +712,35 @@
   margin-bottom: 5vh;
 }
 
-.card .blog-card-image, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .blog-card-image {
+.card .blog-card-image, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .blog-card-image, #press-page .press-content-section .press-wrapper .blog-card .blog-card-image {
   width: 100%;
 }
 
-.card .blog-card-image img, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .blog-card-image img {
+.card .blog-card-image img, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .blog-card-image img, #press-page .press-content-section .press-wrapper .blog-card .blog-card-image img {
   max-width: 100%;
 }
 
-.card .blog-card-heading, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .blog-card-heading {
+.card .blog-card-heading, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .blog-card-heading, #press-page .press-content-section .press-wrapper .blog-card .blog-card-heading {
   font-size: 20px;
   padding: 7px 0px;
   font-weight: bold;
 }
 
-.card .blog-card-content, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .blog-card-content {
+.card .blog-card-content, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .blog-card-content, #press-page .press-content-section .press-wrapper .blog-card .blog-card-content {
   font-size: 16px;
 }
 
-.card .link-wrapper, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .link-wrapper {
+.card .link-wrapper, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .link-wrapper, #press-page .press-content-section .press-wrapper .blog-card .link-wrapper {
   text-align: right;
 }
 
-.card .link-wrapper a, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .link-wrapper a {
+.card .link-wrapper a, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .link-wrapper a, #press-page .press-content-section .press-wrapper .blog-card .link-wrapper a {
   padding: 10px;
   text-decoration: none;
   color: #ff8b26;
 }
 
-.card:active, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card:active {
+.card:active, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card:active, #press-page .press-content-section .press-wrapper .blog-card:active {
   -webkit-transform: scale(0.99);
           transform: scale(0.99);
   -webkit-transition: all 0.2s ease-in-out;
@@ -856,6 +856,44 @@
   margin-top: 29px;
 }
 
+#press-page {
+  width: 90%;
+  margin: auto;
+  margin-top: 3vh;
+  margin-bottom: 3vh;
+}
+
+#press-page .press-page-header {
+  font-size: 40px;
+  font-weight: bold;
+  color: #1daa9b;
+  text-align: center;
+}
+
+#press-page .press-content-section {
+  margin-top: 3vh;
+}
+
+#press-page .press-content-section .press-wrapper {
+  display: -ms-grid;
+  display: grid;
+  -ms-grid-columns: 1fr 1fr 1fr;
+      grid-template-columns: 1fr 1fr 1fr;
+  grid-gap: 27px;
+}
+
+#press-page .press-content-section .press-wrapper .blog-card .link-wrapper {
+  margin-top: 15px;
+}
+
+#press-page .press-content-section .press-wrapper .blog-card .link-wrapper a {
+  padding: 10px;
+  background: #6c5dac;
+  border-radius: 4px;
+  margin-top: 10px;
+  color: white;
+}
+
 @media only screen and (max-width: 800px) {
   body {
     overflow-x: hidden;
@@ -912,8 +950,8 @@
     -webkit-transform: translateX(0%);
             transform: translateX(0%);
     background: white;
-    -webkit-transition: all .33s linear;
-    transition: all .33s linear;
+    -webkit-transition: all 0.33s linear;
+    transition: all 0.33s linear;
     z-index: 8;
   }
   .header-container .option-btn {
@@ -1232,8 +1270,8 @@
   #blog-page .category-buttons-wrapper-come {
     -webkit-transform: translateX(0%) scale(1);
             transform: translateX(0%) scale(1);
-    -webkit-transition: all .33s ease-in-out;
-    transition: all .33s ease-in-out;
+    -webkit-transition: all 0.33s ease-in-out;
+    transition: all 0.33s ease-in-out;
   }
   #single-blog {
     width: 90%;
@@ -1264,6 +1302,16 @@
   }
   #single-blog .single-blog-wrapper .single-blog-description {
     margin-top: 29px;
+  }
+  #press-page {
+    width: 90%;
+    margin: auto;
+    margin-top: 3vh;
+    margin-bottom: 3vh;
+  }
+  #press-page .press-content-section .press-wrapper {
+    -ms-grid-columns: 1fr;
+        grid-template-columns: 1fr;
   }
 }
 
