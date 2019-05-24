@@ -96,7 +96,9 @@
   width: 90%;
   margin: auto;
   position: relative;
+
   background: url("../img/Path 137.png");
+ 
   background-position: center;
   background-size: cover;
   padding: 10px;
@@ -225,7 +227,8 @@
 .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container {
   display: -ms-grid;
   display: grid;
-      grid-template-areas: "box1 box2" "box3 box4";
+      grid-template-areas: "box1 box2"
+ "box3 box4";
 }
 
 .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container .box1 {
@@ -605,7 +608,7 @@
 }
 
 #contact-page .contact-reach-bannner {
-  background: url("../images/Path 137.jpg");
+  background-image: url("../img/Path 137.jpg");
   width: 90%;
   margin: auto;
   position: relative;
@@ -1111,7 +1114,10 @@
     text-align: center;
   }
   .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container {
-        grid-template-areas: "box1" "box2" "box3" "box4";
+        grid-template-areas: "box1"
+ "box2"
+ "box3"
+ "box4";
     width: 80%;
     margin: auto;
   }
@@ -1432,7 +1438,10 @@
     text-align: center;
   }
   .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container {
-        grid-template-areas: "box1" "box2" "box3" "box4";
+        grid-template-areas: "box1"
+ "box2"
+ "box3"
+ "box4";
   }
   .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container .box {
     text-align: center;

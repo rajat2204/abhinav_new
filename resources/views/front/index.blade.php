@@ -64,10 +64,8 @@
                             <li>• Indian government procurement documentation.</li>
 
                         </ul>
-
                     </div>
                 </div>
-
             </div>
             <div class="area4">
                 <div class="area4-content-wrappper">
