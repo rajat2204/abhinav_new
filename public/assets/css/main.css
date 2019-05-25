@@ -271,6 +271,25 @@
 .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container .box .trust-content {
   padding-bottom: 1rem;
   font-size: 13px;
+  height: 52px;
+}
+
+.about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container .box .explore {
+  text-align: right;
+  padding-right: 19px;
+  margin-bottom: 18px;
+}
+
+.about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container .box .explore a {
+  text-decoration: none;
+  color: #0e99c3;
+  -webkit-transition: all .33s linear;
+  transition: all .33s linear;
+}
+
+.about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container .box .explore a:hover {
+  -webkit-transform: scale(0.9);
+          transform: scale(0.9);
 }
 
 .interview-talks-section {
@@ -337,11 +356,6 @@
   cursor: pointer;
 }
 
-.my-blogs {
-  width: 90%;
-  margin: auto;
-}
-
 .my-blogs .myblogs-wrapper {
   width: 90%;
   margin: auto;
@@ -357,6 +371,7 @@
 .my-blogs .myblogs-wrapper .col {
   width: 100%;
   height: 80%;
+  overflow: hidden;
 }
 
 .my-blogs .myblogs-wrapper .col a {
@@ -569,10 +584,13 @@
   opacity: 0;
 }
 
-#about-page .about-banner {
+#about-page {
   width: 90%;
   margin: auto;
-  height: 75vh;
+}
+
+#about-page .about-banner {
+  height: 55vh;
   color: white;
   text-align: center;
   position: relative;
@@ -616,6 +634,12 @@
 
 #about-page .about-banner .content-banner .content-banner-subcontent {
   color: #FF8B26;
+}
+
+#about-page .about-content {
+  padding: 20px;
+  background: url("../img/Path 137.png");
+  font-size: 1.2rem;
 }
 
 #contact-page .contact-reach-bannner {
@@ -728,7 +752,6 @@
   border-radius: 7px;
   padding: 14px;
   border: 1px solid lightblue;
-  margin-bottom: 5vh;
 }
 
 .card .blog-card-image, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .blog-card-image, #press-page .press-content-section .press-wrapper .blog-card .blog-card-image {
@@ -748,7 +771,7 @@
 }
 
 .card .blog-card-content, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .blog-card-content, #press-page .press-content-section .press-wrapper .blog-card .blog-card-content {
-  font-size: 16px;
+  font-size: 18px;
 }
 
 .card .link-wrapper, #blog-page .blog-wrapper .category-active .all-blogs-wrapper .blog-card .link-wrapper, #press-page .press-content-section .press-wrapper .blog-card .link-wrapper {
@@ -875,6 +898,9 @@
 
 #single-blog .single-blog-wrapper .single-blog-description {
   margin-top: 29px;
+  font-size: 20px;
+  line-height: 1.4;
+  letter-spacing: .33px;
 }
 
 #press-page {
@@ -1146,6 +1172,10 @@
   .interview-talks-section .link-load-more {
     text-align: center;
   }
+  .my-blogs {
+    width: 90%;
+    margin: auto;
+  }
   .my-blogs .myblogs-wrapper {
     margin-top: 10vh;
     -ms-grid-columns: 1fr;
@@ -1294,6 +1324,10 @@
     -webkit-transform: scale(0.9);
             transform: scale(0.9);
   }
+  #blog-page .blog-wrapper {
+    width: 90%;
+    margin: auto;
+  }
   #blog-page .blog-wrapper .category-active .all-blogs-wrapper {
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
@@ -1360,6 +1394,8 @@
     margin-bottom: 3vh;
   }
   #press-page .press-content-section .press-wrapper {
+    width: 90%;
+    margin: auto;
     -ms-grid-columns: 1fr;
         grid-template-columns: 1fr;
   }

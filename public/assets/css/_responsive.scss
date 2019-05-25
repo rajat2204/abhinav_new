@@ -230,6 +230,7 @@
     }
 
     .my-blogs {
+        @include container;
         .myblogs-wrapper {
             margin-top: 10vh;
             grid-template-columns: 1fr;
@@ -386,7 +387,9 @@
         }
     }
     #blog-page {
+        
         .blog-wrapper {
+            @include container;
             .category-active {
                 .all-blogs-wrapper {
                     grid-template-columns: 1fr;
@@ -451,6 +454,7 @@
 
         .press-content-section {
             .press-wrapper {
+                @include container;
                 grid-template-columns: 1fr;
 
                 .blog-card {

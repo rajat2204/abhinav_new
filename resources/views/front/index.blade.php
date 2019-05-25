@@ -38,30 +38,21 @@
         <div class="side-area-wrapper">
             <div class="area3">
                 <div class="area3-content-wrapper">
-                    <div class="heading">Meet Abhinav Kumar,<br>
-                        India Head at Trivago
+                    <div class="heading">Meet Abhinav Kumar
+                        
                     </div>
                     <div class="subheading">
-                        Country Development (India) at Trivago N.V
+                        
                     </div>
                     <div class="tagline">
-                        A traveler, a dreamer, a Seller. You tell me, I do it. Simple
+                       
                     </div>
 
                     <div class="expertise">
-                        Specialties: Expertise:
+                        
 
                         <ul class="expertise-list">
-                            <li>• Market research and Detailed analysis. </li>
-                            <li>• Developing strategies to enter new Market.</li>
-                            <li>• Developing strategic business plan.</li>
-                            <li>• Finding partner in India according to the company requirement.</li>
-                            <li>• Lobbying with the government officials in India.</li>
-                            <li>• Procurement and sourcing from India.</li>
-                            <li>• General market strategies.</li>
-                            <li>• Innovative ideas to launch new products in a market.</li>
-                            <li>• Help in preparing tender document</li>
-                            <li>• Indian government procurement documentation.</li>
+                                Most people know Abhinav Kumar as the Trivago Brand Ambassador, commonly referred to as ‘Mr Trivago’ or ‘the Trivago guy’ in the punchline of social media memes. What people don’t know is that behind the scenes, Abhinav played an important role within Trivago as the Country Manager for India with the mission to establish and grow the brand within the market. In a data-driven and test-proven company, Abhinav overseaw and finds solutions to continue growth in a unique, mobile-dependent and responsive audience. An economics graduate from the University of Trento, Abhinav has first-hand experience in buying both online and offline media for the last seven years. Online video has been the core part of his strategy due to the huge differences between TV and internet penetration in India.
 
                         </ul>
                     </div>
@@ -71,7 +62,7 @@
                 <div class="area4-content-wrappper">
                     <div class="row1">
                         <div class="row1-content">
-                            My core Values
+                            supported startups
                         </div>
 
                     </div>
@@ -81,13 +72,13 @@
                                 <img src="{{asset('assets/img/Union 35.png')}}" alt="">
                             </div>
                             <div class="heading-content">
-                                Trust
+                                PaisaDukan.com
                             </div>
                             <div class="trust-content">
-                                Trust in one another, in our competencies and in our intentions, is the basis of all we
-                                do. We cultivate an environment in which trust can develop, so that our
-                                conversations
-                                are straightforward, honest and raw.
+                                PaisaDukan is an India-based peer-to-peer lending marketplace which operates digitally to emerge as an alternate way of carrying out financial activities.
+                            </div>
+                            <div class="explore">
+                                <a href="http://paisadukan.com" target="_blank">Explore</a>
                             </div>
                         </div>
                         <div class="box box2">
@@ -95,12 +86,15 @@
                                 <img src="{{asset('assets/img/Union 35.png')}}" alt="">
                             </div>
                             <div class="heading-content">
-                                Entrepreneurial Passion
+                                BooksBySlot
                             </div>
                             <div class="trust-content">
-                                We believe there is no such thing as a bad idea, and everyone at trivago should pitch
-                                theirs. Company-wide, our days are spent conceptualizing, building, testing, analysing,
-                                iterating and scaling.
+                                BookBySlot is amongst the first few travel booking engines to provide slot booking to its 
+
+                                
+                            </div>
+                            <div class="explore">
+                                <a href="https://www.bookbyslot.com/" target="_blank">Explore</a>
                             </div>
                         </div>
                         <div class="box box3">
@@ -108,11 +102,14 @@
                                 <img src="{{asset('assets/img/Union 35.png')}}" alt="">
                             </div>
                             <div class="heading-content">
-                                Fanatic Learning
+                                Sattuz
                             </div>
                             <div class="trust-content">
                                 it is not about what you know, but how you learn. We believe if you stand still you get
-                                left behind, which is why we constantly change perspectives.
+                                left behind,.
+                            </div>
+                            <div class="explore">
+                                <a href="http://sattuz.in/" target="_blank">Explore</a>
                             </div>
                         </div>
                         <div class="box box4">
@@ -120,11 +117,15 @@
                                 <img src="{{asset('assets/img/Union 35.png')}}" alt="">
                             </div>
                             <div class="heading-content">
-                                Unwavering Focus
+                                Spice & travel
                             </div>
                             <div class="trust-content">
-                                In a world of endless possibilities, we prioritize completion over perfection. We focus
-                                our energy into what adds the most value, and then commit to it end-to-end.
+                                Hello! We’re Abhinav and Marissa, the creators behind Spice and Travel.
+                                
+                               
+                            </div>
+                            <div class="explore">
+                                <a href="https://www.spiceandtravel.com " target="_blank">Explore</a>
                             </div>
                         </div>
                     </div>
