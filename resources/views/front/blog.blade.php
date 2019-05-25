@@ -33,6 +33,7 @@
                 <div class="blog-card-content">{{strip_tags(str_limit(preg_replace("/&#?[a-z0-9]{2,8};/i","",$blog['description']),200))}} </div> 
                 <div class="link-wrapper">
                   <a href="{{url('blog')}}/{{$blog['slug']}}" class="read-more">Read More</a>
+                  <a href="{{url('blog')}}/{{$blog['slug']}}" class="read-more">Source</a>
                 </div>
           </div>
         @endforeach

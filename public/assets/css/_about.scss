@@ -1,8 +1,8 @@
 #about-page{
-     
+    @include container;
     .about-banner{
-        @include container;
-        height: 75vh;
+        
+        height: 55vh;
         
         color: white;
         text-align: center;
@@ -42,4 +42,11 @@
          }
        }
     }
+    .about-content{
+        padding:20px;
+        background: url("../img/Path\ 137.png");
+        font-size: 1.2rem;
+        
+    }
+
 }
