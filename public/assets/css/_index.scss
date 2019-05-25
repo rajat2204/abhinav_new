@@ -298,6 +298,7 @@
   }
   
   .my-blogs {
+    @include container;
     .myblogs-wrapper{
       @include container;
       display: grid;
@@ -315,6 +316,7 @@
           img {
             width: 100%;
             height: 100%;
+           
           }
           .col-content {
             padding-top: 1rem;
@@ -358,6 +360,7 @@
   
   .media-coverage {
     @include container;
+
     margin-top: $maginofsection;
     display: grid;
     grid-template-columns: 2fr 3fr;
@@ -390,6 +393,7 @@
             img {
               width: 100%;
               height: 100%;
+              object-fit: cover;
             }
           }
           .image-wrapper-content {

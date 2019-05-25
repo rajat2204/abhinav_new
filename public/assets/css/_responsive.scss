@@ -536,7 +536,7 @@
             }
             .area4 {
                 margin-top: $maginofsection;
-                width: 90%;
+                width: 80%;
                 .area4-content-wrappper {
                     .row1 {
                         text-align: center;
@@ -574,6 +574,7 @@
     }
 
     .my-blogs {
+        @include container;
         margin-top: 10vh;
         grid-template-columns: 1fr;
         .handle-image {
@@ -594,7 +595,7 @@
     }
 
     .media-coverage {
-        width: 90%;
+        width: 80%;
         grid-template-columns: 1fr;
         text-align: center;
         .media-coverage-section2 {
