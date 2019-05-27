@@ -5,10 +5,19 @@
         <meta content="width=device-width, initial-scale=1.0" name="viewport"/>
         <meta http-equiv="Content-type" content="text/html; charset=utf-8">
     
-        <meta content="" name="description"/>
-        <meta content="" name="author"/>
+        <meta content="this page is a proper portfolio landing page of abhinav kumar who was head at trivago india " name="description"/>
+        <meta content="Abinav Kumar Landing Page" name="author"/>
+        <!-- Global site tag (gtag.js) - Google Analytics -->
+        <script async src="https://www.googletagmanager.com/gtag/js?id=UA-140880007-1"></script>
+        <script>
+        window.dataLayer = window.dataLayer || [];
+        function gtag(){dataLayer.push(arguments);}
+        gtag('js', new Date());
 
-        
+        gtag('config', 'UA-140880007-1');
+        </script>
+        <meta name="google-site-verification" content="fincKC03s89igEfFuTw1ru7wa8sxH7Y4SL5GYq_13G0">
+         
         <meta name="_token" content="{{ csrf_token() }}">
         
         <link rel="dns-prefetch" href="https://fonts.gstatic.com">
