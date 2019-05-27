@@ -19,13 +19,13 @@
         <meta charset="utf-8"/>
         <title>Abhinav</title>
         
-    <link rel="icon" type="image/png" href="{{asset('assets/img/a.klogo.png')}}">
+    <link rel="icon" type="image/png" href="{{asset('assets/img/aklogo.png')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/main.css')}}">
     <link rel="stylesheet" href="{{asset('assets/css/sweetalert2.css')}}">
 
 </head>
     <body class="page-md login loadingInProgress">
-        <!-- <div id="cover"></div> -->
+        <div id="loader"></div>
             <div class="wrapper">
                 @yield('content')
             </div>
@@ -50,6 +50,12 @@
             },isLocal: false
         });
       });
+
+    $(window).load(function(){
+     setTimeout(function(){
+         $('#loader').fadeToggle();
+     },500)
+   });
     </script>
     
     <!--Start of Tawk.to Script-->

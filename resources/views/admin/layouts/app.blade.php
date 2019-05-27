@@ -15,7 +15,7 @@
 	    <meta charset="utf-8"/>
 	    <title>Abhinav</title>
 
-	 	<link rel="icon" type="image/png" href="{{asset('assets/img/a.klogo.png')}}">
+	 	<link rel="icon" type="image/png" href="{{asset('assets/img/aklogo.png')}}">
 	 	<!-- Bootstrap 3.3.7 -->
 	 	<link rel="stylesheet" href="{{asset('assets/bower_components/bootstrap/dist/css/bootstrap.min.css')}}">
 	 	<!-- Font Awesome -->
