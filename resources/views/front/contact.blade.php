@@ -23,7 +23,7 @@
             <textarea name="message" class="inputs" id="" cols="30" rows="2" placeholder="Enter Message"></textarea>
             <span class="input-bar"></span>
           </div>
-           <button type="button" id="Conntactbtn" data-request="ajax-submit" data-target='[role="contactus"]'>
+           <button type="button" id="Conntactbtn" data-request="ajax-submit" data-target='[role="contactus"]'>Submit</button>
         </form>
     </div>   
 </div>
