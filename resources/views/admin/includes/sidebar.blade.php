@@ -36,6 +36,11 @@
             <li class="units-icon"><a href="{{url('admin/social')}}">Social Media</a></li>
           </ul>
         </li>
+        <!-- <li class="dashboard-icon">
+          <a href="{{url('admin/contactleads')}}">
+            <i class="fa fa-picture-o"></i> <span>Enquiry</span>
+          </a>
+        </li> -->
       </ul>
     </section>
     <!-- /.sidebar -->

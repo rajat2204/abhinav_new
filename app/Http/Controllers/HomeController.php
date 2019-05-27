@@ -98,6 +98,17 @@ class HomeController extends Controller
             
             $inserId = ContactUs::add($data);
 
+            if($inserId){
+               $emailData               = ___email_settings();
+               $emailData['name']       = !empty($request->name)?$request->name:'';
+               $emailData['email']      = !empty($request->email)?$request->email:'';
+               $emailData['message']    = !empty($request->message)?$request->message:'';
+               $emailData['date']       = date('Y-m-d H:i:s');
+
+               $emailData['custom_text'] = 'Your Enquiry has been submitted successfully';
+               ___mail_sender($request->name,$request->email,$request->message,"enquiry_email",$emailData);
+            }
+
             $this->status   = true;
             $this->modal    = true;
             $this->alert    = true;
