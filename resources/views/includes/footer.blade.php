@@ -1,4 +1,6 @@
 <div class="footer-section">
+
+    <div class="message"></div>
     <a href= "">
         <div class="footer-wrapper">
       <div class="footer-image">
@@ -17,3 +19,5 @@
 <div class ="company-copyright ">
               Designed & Developed BY <a class="company-link" href = "https://igniterpro.com/">Igniterpro</a>  
 </div>
+
+
