@@ -20,6 +20,7 @@
         
     <link rel="icon" type="image/png" href="{{asset('assets/img/a.klogo.png')}}">
     <link rel="stylesheet" type="text/css" href="{{asset('assets/css/main.css')}}">
+    <link rel="stylesheet" href="{{asset('assets/css/sweetalert2.css')}}">
 
 </head>
     <body class="page-md login loadingInProgress">
@@ -32,8 +33,9 @@
 
     <script src="{{asset('assets/js/jquery-min.js')}}"></script>
     <script src="{{asset('assets/js/main.js')}}"></script>
-    
-  
+    <script src="{{asset('assets/js/script.js')}}"></script>
+    <script src="{{asset('assets/js/sweetalert2.js')}}"></script>
+    <link rel="stylesheet" href="{{asset('assets/css/admin-style.css')}}">
     
     <!-- [ SLIDER SCRIPT ] -->
 

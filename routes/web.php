@@ -16,6 +16,7 @@ Route::get('pagenotfound', ['as' => 'notfound', 'uses' => 'HomeController@pageNo
 Route::get('/','HomeController@index');
 Route::get('/about','HomeController@aboutUs');
 Route::get('/contact','HomeController@contactUs');
+Route::post('contactussubmission','HomeController@contact');
 Route::get('/interviews','HomeController@interview');
 Route::get('/blog','HomeController@blogs');
 Route::get('blog/{slug}','HomeController@singleBlog');

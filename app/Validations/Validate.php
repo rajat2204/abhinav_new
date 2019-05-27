@@ -190,4 +190,20 @@ class Validate
     	]);
         return $validator;		
 	}
+
+	public function createContactUs($action='add'){
+        $validations = [
+        	'name' 				=> $this->validation('name'),
+			'email'  			=> $this->validation('req_email'),
+            'message' 		    => $this->validation('name'),
+    	];
+    	
+        $validator = \Validator::make($this->data->all(), $validations,[
+    		'name.required' 		=>  'Name is required.',
+    		'email.required' 		=>  'E-mail is required.',
+    		'message.required' 		=>  'Message is required.',
+
+    	]);
+        return $validator;		
+	}
 }

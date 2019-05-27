@@ -5,6 +5,7 @@ namespace App\Http\Controllers;
 use App\Models\Blog;
 use App\Models\Press;
 use App\Models\SocialMedia;
+use App\Models\ContactUs;
 use App\Models\Category;
 use Illuminate\Http\Request;
 use App\Http\Controllers\Controller;
@@ -83,5 +84,26 @@ class HomeController extends Controller
     public function pageNotFound()
     {
         return view('errors.404');
+    }
+
+    public function contact(Request $request){
+        $validation = new Validations($request);
+        $validator  = $validation->createContactUs();
+        if($validator->fails()){
+            $this->message = $validator->errors();
+        }else{
+            $data['name']               =!empty($request->name)?$request->name:'';
+            $data['email']              =!empty($request->email)?$request->email:'';
+            $data['message']            =!empty($request->message)?$request->message:'';
+            
+            $inserId = ContactUs::add($data);
+
+            $this->status   = true;
+            $this->modal    = true;
+            $this->alert    = true;
+            $this->message  = "Enquiry has been submitted successfully.";
+            $this->redirect = url('/');
+        }
+        return $this->populateresponse();
     }
 }
