@@ -1,12 +1,12 @@
 <!-- banner section begins from here  -->
 
-    <div class="banner-wrapper">
+<div class="banner-wrapper">
         <div class="banner-full-wrapper">
             <div class="banner-content-section">
                 <div class="text-content">
-                    Precisely what you <br>
-                    imagined your brand <br>
-                    could be, <span> only more so.</span>
+                    "You can't sell anything <br>
+                     if you can't tell anything"<br>
+                      <span> - Beth Comstock</span>
                     <hr>
                 </div>
             </div>
@@ -38,7 +38,7 @@
         <div class="side-area-wrapper">
             <div class="area3">
                 <div class="area3-content-wrapper">
-                    <div class="heading">Meet Abhinav Kumar
+                    <div class="heading">
                         
                     </div>
                     <div class="subheading">
@@ -52,7 +52,8 @@
                         
 
                         <ul class="expertise-list">
-                                Most people know Abhinav Kumar as the Trivago Brand Ambassador, commonly referred to as ‘Mr Trivago’ or ‘the Trivago guy’ in the punchline of social media memes. What people don’t know is that behind the scenes, Abhinav played an important role within Trivago as the Country Manager for India with the mission to establish and grow the brand within the market. In a data-driven and test-proven company, Abhinav overseaw and finds solutions to continue growth in a unique, mobile-dependent and responsive audience. An economics graduate from the University of Trento, Abhinav has first-hand experience in buying both online and offline media for the last seven years. Online video has been the core part of his strategy due to the huge differences between TV and internet penetration in India.
+                            
+                                 <span class= "sytle-cap-1">M</span>ost people know Abhinav Kumar as the Trivago Brand Ambassador, commonly referred to as ‘Mr Trivago’ or ‘the Trivago guy’ in the punchline of social media memes. What people don’t know is that behind the scenes, Abhinav played an important role within Trivago as the Country Manager for India with the mission to establish and grow the brand within the market. In a data-driven and test-proven company, Abhinav overseaw and finds solutions to continue growth in a unique, mobile-dependent and responsive audience. An economics graduate from the University of Trento, Abhinav has first-hand experience in buying both online and offline media for the last seven years. Online video has been the core part of his strategy due to the huge differences between TV and internet penetration in India.
 
                         </ul>
                     </div>
@@ -89,7 +90,7 @@
                                 BooksBySlot
                             </div>
                             <div class="trust-content">
-                                BookBySlot is amongst the first few travel booking engines to provide slot booking to its 
+                                BookBySlot is amongst the first few travel booking engines to provide slot booking to its patrons.
 
                                 
                             </div>
@@ -105,8 +106,11 @@
                                 Sattuz
                             </div>
                             <div class="trust-content">
-                                it is not about what you know, but how you learn. We believe if you stand still you get
-                                left behind,.
+                                We at Sattuz believe in " Good Health is the Real Wealth."
+
+This season quench your thirst the healthier way by drinking sattuz at your home,
+
+office, playground as well as on the go.
                             </div>
                             <div class="explore">
                                 <a href="http://sattuz.in/" target="_blank">Explore</a>
