@@ -80,6 +80,7 @@ class Validate
         	'category_id' 	=> $this->validation('name'),
             'title'         => $this->validation('name'),
             'slug'  		=> array_merge($this->validation('slug_no_space'),[Rule::unique('blog')]),
+			'url'  			=> $this->validation('url'),
 			'description'  	=> $this->validation('description'),
         	'image' 		=> $this->validation('photo'),
     	];
@@ -99,6 +100,7 @@ class Validate
     		'slug.required'     		   =>  'Blog Slug is Required.',
       		'slug.unique'     			   =>  'This Blog Slug has already been taken.',
       		'slug.alpha_dash'     		   =>  'No spaces allowed in Blog slug.The Slug may only contain letters, numbers, dashes and underscores.',
+    		'url.required' 		  		   =>  'URL is required.',
     		'description.required' 		   =>  'Blog Description is required.',
     		'image.required' 		       =>  'Blog Image is required.',
             'image.mimes'                  =>  'Image should be in jpg,jpeg or png format.',

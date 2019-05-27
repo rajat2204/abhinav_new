@@ -79,4 +79,9 @@ class HomeController extends Controller
         // dd($data['press']);
         return view('front_home',$data);
     }
+
+    public function pageNotFound()
+    {
+        return view('errors.404');
+    }
 }

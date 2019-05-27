@@ -7,7 +7,7 @@ use Illuminate\Database\Eloquent\Model;
 class Blog extends Model
 {
     protected $table = 'blog';
-    protected $fillable = ['id','category_id','slug','title','image','description','status','created_at','updated_at'];
+    protected $fillable = ['id','category_id','slug','url','title','image','description','status','created_at','updated_at'];
 
     public static function change($userID,$data){
         $isUpdated = false;

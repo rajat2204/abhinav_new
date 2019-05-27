@@ -12,6 +12,7 @@
 */
 
 // Front Section
+Route::get('pagenotfound', ['as' => 'notfound', 'uses' => 'HomeController@pageNotFound']);
 Route::get('/','HomeController@index');
 Route::get('/about','HomeController@aboutUs');
 Route::get('/contact','HomeController@contactUs');

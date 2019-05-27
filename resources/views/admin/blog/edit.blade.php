@@ -34,6 +34,12 @@
           <input type="text" class="form-control" placeholder="Enter Blog Slug..." name="slug" value="{{!empty($blog['slug'])?$blog['slug']:''}}">
         </div>
 
+        <div class="form-group">
+          <label>Source URL:</label>
+          <input type="text" class="form-control" placeholder="Enter Blog URL..." name="url" value="{{!empty($blog['url'])?$blog['url']:''}}">
+          <p>Please use <strong>'http'</strong> with the url.</p>
+        </div>
+
           
         <div class="form-group">
           <label>Blog Description:</label>

@@ -31,7 +31,8 @@
 
         <div class="form-group">
           <label>Press URL:</label>
-          <input type="text" class="form-control" placeholder="Enter Press URL..." name="url" value="{{!empty($press['url'])?$press['url']:''}}"> 
+          <input type="text" class="form-control" placeholder="Enter Press URL..." name="url" value="{{!empty($press['url'])?$press['url']:''}}">
+          <p>Please use <strong>'http'</strong> with the url.</p>
         </div>
 
         <div class="form-group">
