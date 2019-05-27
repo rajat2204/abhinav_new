@@ -15,7 +15,7 @@
            </div>
            <div class="form-input">
             <label for="">Email <span>*</span></label>
-            <input type="email" class="inputs" placeholder="Enter E-mail" name="email">
+            <input type="email" class="inputs" placeholder="Enter E-mail" name="email" required> 
             <span class="input-bar"></span>
            </div>
           <div class="form-input">

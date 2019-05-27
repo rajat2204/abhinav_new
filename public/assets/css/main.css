@@ -716,6 +716,28 @@
   transition: all 0.33s ease-in-out;
 }
 
+#contact-page .contact-reach-bannner .contact-form form .form-input span.help-block {
+  position: absolute;
+  top: 71px;
+  transition: all .33s ease-in-out;
+  opacity: 0;
+  color: red;
+  animation: bluring;
+  animation-duration: 2s;
+  animation-fill-mode: forwards;
+
+}
+
+@keyframes bluring{
+  form{
+      opacity: .7;
+      
+  }
+  to{
+    opacity: 1;
+  }
+}
+
 #contact-page .contact-reach-bannner .contact-form form .form-input:hover .input-bar {
   background: #FF8B26;
   -webkit-transform: scale(1);
