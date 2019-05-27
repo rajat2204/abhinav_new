@@ -97,16 +97,15 @@ class HomeController extends Controller
             $data['message']            =!empty($request->message)?$request->message:'';
             
             $inserId = ContactUs::add($data);
-
             if($inserId){
                $emailData               = ___email_settings();
                $emailData['name']       = !empty($request->name)?$request->name:'';
-               $emailData['email']      = !empty($request->email)?$request->email:'';
+               $emailData['email']      = 'rajat.igniterpro@gmail.com';
                $emailData['message']    = !empty($request->message)?$request->message:'';
                $emailData['date']       = date('Y-m-d H:i:s');
 
-               $emailData['custom_text'] = 'Your Enquiry has been submitted successfully';
-               ___mail_sender($request->name,$request->email,$request->message,"enquiry_email",$emailData);
+               $emailData['custom_text'] = 'You have got an Enquiry from the user.';
+               ___mail_sender('rajat.igniterpro@gmail.com',$request->name,"enquiry_email",$emailData);
             }
 
             $this->status   = true;
