@@ -1520,6 +1520,12 @@
     text-align: center;
     padding-left: 5px;
   }
+
+  .about-me-section-wrapper .side-area-wrapper .area4 .area4-content-wrappper .row2-container .box .trust-content {
+    padding-bottom: 1rem;
+    font-size: 13px;
+    height: 100px;
+}
   .interview-talks-section .row1 {
     text-align: center;
   }
