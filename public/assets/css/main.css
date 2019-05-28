@@ -574,14 +574,15 @@
   color: #1daa9b;
 }
 
-#interview-page #interview-and-talks iframe {
-  font-family: "Fira Sans", sans-serif;
+#interview-page #interview-and-talks .grid {
+  width: 100%;
+  grid-template-columns: 1fr 1fr 1fr;
+  display: grid;
   margin-top: 5vh;
-  
+  grid-gap: 15px;
 }
-
-#interview-page #interview-and-talks iframe div#yt-prof-pic {
-  opacity: 0;
+#interview-page #interview-and-talks iframe{
+  width: 100%;
 }
 
 #about-page {
@@ -1252,13 +1253,16 @@
   #interview-page #interview-and-talks {
     width: 80%;
   }
-  #interview-page #interview-and-talks iframe {
+  #interview-page #interview-and-talks .grid {
     width: 100%;
-    overflow-y: scroll;
-    padding-right: 17px;
-    /* Increase/decrease this value for cross-browser compatibility */
-    -webkit-box-sizing: content-box;
-            box-sizing: content-box;
+    grid-template-columns: 1fr;
+    display: grid;
+    margin-top: 5vh;
+    grid-gap: 15px;
+  }
+
+  #interview-page #interview-and-talks iframe{
+    width: 100%;
   }
   #about-page .about-banner {
     width: 95%;
