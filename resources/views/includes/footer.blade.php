@@ -1,6 +1,6 @@
 <div class="footer-section">
 
-    <div class="message"></div>
+   
     <a href= "">
         <div class="footer-wrapper">
       <div class="footer-image">
