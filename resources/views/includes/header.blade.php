@@ -3,7 +3,7 @@
     <div class="header-container">
         <div class="header">
             <div class="logo-section">
-                <a href="{{url('/')}}"><img src="{{asset('assets/img/a.klogo.png')}}" alt=""></a>
+                <a href="{{url('/')}}"><img src="{{asset('assets/img/aklogo.png')}}" alt=""></a>
             </div>
             <div class="navlist-section">
                 <ul class="lists-and-contact-btn">
