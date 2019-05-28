@@ -49,7 +49,7 @@
         return array(
             'site'              => $configuration['site_name'],
             'slogan'            => $configuration['site_description'],
-            'site_link'         => sprintf("%s/",asset('/')),
+            'site_link'         => sprintf("%s",asset('/')),
             'office_address'    => $configuration['office_address'],
             'help_email'        => $configuration['help_email'],
             'info_email'        => $configuration['info_email'],
